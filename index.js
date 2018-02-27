@@ -193,11 +193,11 @@ function getFilmRecommendations(req, res) {
                         });
                     };
                 })
-                handleOffsetAndLimit()
+                handleOffsetAndLimit();
             });
         }).catch((err) => {
             console.log(err)
-        })
+        });
 
     // OFFSET FOR PAGINATION AND LIMIT FOR RETURNED RECORDS
     let handleOffsetAndLimit = () => {
